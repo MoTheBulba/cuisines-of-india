@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Map of India with Names of States and Union Territories</title>
+        <link rel="stylesheet" href="map_states_and_union_territories.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="jquery.maphilight.js"></script>
+    </head>
+
+    <body>
+        <div id="container">
+
+            <div id="image_container">
+
+                <img id="indiaMap" src="India_names.png" usemap="#image-map">
+
+                <map name="image-map">
+                    <area target="_blank" alt="Kerala's Cuisine" title="Kerala's Cuisine" href="https://en.wikipedia.org/wiki/Kerala_cuisine" coords="567,1966,575,1952,575,1937,570,1922,586,1892,581,1882,570,1885,576,1861,567,1840,552,1843,549,1827,550,1814,541,1801,537,1789,528,1788,526,1771,513,1765,524,1753,511,1742,469,1724,451,1700,432,1692,448,1726,459,1737,479,1767,523,1874,518,1882,526,1910,537,1936" shape="poly">
+                </map>
+                  
+            </div>
+            
+        </div>
+        <script src="imageMapResizer.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Check if JQuery is working
+                console.log("jQuery version: " + $.fn.jquery);
+        
+                // Start imageMapResizer
+                $('map').imageMapResize();
+        
+                // Start maphilight, colours are HEX numbers
+                $('#indiaMap').maphilight({
+                    fillColor: 'fdffeb',
+                    stroke: true,
+                    strokeColor: 'bfb63b',
+                    strokeWidth: 2,
+                });
+            });
+        </script>
+        
+    </body>
+
+</html>

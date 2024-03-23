@@ -1,3 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* CSS for the navigation banner */
+.navbar-banner {
+    display: flex;
+    background-color: #181818;
+    padding: 10px 20px;
+    position: fixed; /* Fix the navigation banner to the top of the viewport */
+    top: 0; /* Position the navigation banner at the top */
+    left: 0; /* Position the navigation banner at the left */
+    width: 100%; /* Make the navigation banner span the full width of the viewport */
+    z-index: 9999; /* Set a higher z-index to ensure the banner appears on top of other elements */
+}
+
+.navbar-banner a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-banner a:hover {
+    color: #2cb200;
+}
+
+/* CSS for the content */
 #container {
     width: 40%;
     margin: auto; /* Centres  container */
@@ -7,6 +37,10 @@
     width: 100%;
     max-width: 800px;
     margin: 0 auto; /* Centres image container within the container */
+    margin-top: 50px; /* Add margin-top to push the image container below the navigation banner */
+    float: left; /* Float the image container to the left */
+    clear: both; /* Clear the float to prevent overlapping */
+    width: 100%; /* Set the width to 100% */
 }
 
 img {

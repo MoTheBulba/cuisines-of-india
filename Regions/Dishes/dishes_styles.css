@@ -9,9 +9,12 @@ body {
     min-height: 100vh;
 }
 
+/* CSS for the intro */
 .introduction {
     text-align: justify;
     padding: 20px;
+    max-width: 65%;
+    width: 100%;
 }
 
 h1 {
@@ -32,20 +35,22 @@ p {
     line-height: 1.6;
 }
 
-
-.banner {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+/* CSS for the navigation banner */
+.navbar-banner {
+    display: flex;
+    background-color: #181818;
+    padding: 10px 20px; 
 }
 
-.banner a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.navbar-banner a {
+    margin-right: 20px; 
+    text-decoration: none; 
+    color: #fefefe; 
+    font-size: 16px; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+.navbar-banner a:hover {
+    color: #2cb200; 
 }

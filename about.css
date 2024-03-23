@@ -13,7 +13,7 @@ body {
 .introduction {
     text-align: justify;
     padding: 20px;
-    max-width: 65%;
+    max-width: 50%;
     width: 100%;
 }
 
@@ -24,42 +24,36 @@ h1 {
     padding-bottom: 5px;
 }
 
-h1 span {
-    color: #333;
-    font-size: 28px;   
-}
-
 p {
     color: #3c3b3b;
     font-size: 16px;
     line-height: 1.6;
 }
 
-/* CSS for the dishes */
-.dishes {
+/* CSS for the FAQ */
+.faq {
     text-align: justify;
     padding: 20px;
+    max-width: 70%;
+    width: 100%;
 }
 
 h2 {
     margin-bottom: 10px;
-    border-bottom: 2px solid #cdcdcd;
-    width: 600px; 
-    padding-bottom: 5px;
 }
 
-a {
-    color: #3c3b3b;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: black;
-  }
+details {
+    font-size: 16px;
+    line-height: 1.6;
+    
+}
+
+details > p {
+    color: #ffffff;
+    background-color: #525252;
+    padding: 10px;
+    border-radius: 8px;
+}
 
 /* CSS for the navigation banner */
 .navbar-banner {

@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    min-height: 100vh;
+}
+
+/* CSS for the intro */
+.introduction {
+    text-align: justify;
+    padding: 20px;
+    max-width: 50%;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #cdcdcd;
+    width: 600px; 
+    padding-bottom: 5px;
+}
+
+p {
+    color: #3c3b3b;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: #3c3b3b;
+  }
+  
+  a:hover {
+    color: #c07f1e;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: #ffc60c;
+  }
+
+/* CSS for the table */
+.outer-wrapper {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid rgb(17, 110, 3);
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.table-wrapper {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: fit-content;
+    max-height: 66.4vh;
+    margin-top: 22px;
+    margin: 15px;
+    padding-bottom: 20px;
+}
+
+table {
+    width: 100%; 
+    table-layout: fixed; /* Fix the table layout */
+    border-collapse: collapse; /* Collapse the borders */
+}
+
+table th {
+    position: sticky;
+    top: 0px;
+    background-color: #0a5106;
+    color: rgb(249, 234, 200);
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    outline: 0.7px solid black;
+    border: 1.5px solid black;
+    padding: 15px;
+}
+
+table td {
+    text-align: left;
+    font-size: 14px;
+    border: 1px solid rgb(177, 177, 177);
+    padding: 15px; /* Set padding for all sides */
+    width: 150px; /* Set fixed width for the columns */
+}
+
+/* CSS for the navigation banner */
+.navbar-banner {
+    display: flex;
+    background-color: #181818;
+    padding: 10px 20px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 9999; 
+}
+
+.navbar-banner a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-banner a:hover {
+    color: #2cb200;
+}
+
+/* Code taken from https://github.com/zangetsu-isshin/dropdown-filter/tree/main */
+/* Thank you, zangetsu-isshin */

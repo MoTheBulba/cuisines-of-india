@@ -35,6 +35,34 @@ p {
     line-height: 1.6;
 }
 
+/* CSS for the "Go Back" link */
+.go_back {
+    text-align: center;
+    padding: 20px;
+    max-width: 14%;
+    width: 100%;
+}
+
+.go_back p {
+    background-color: #cbcaca;
+    border: 2px solid rgb(175, 189, 212);
+    border-radius: 5px;
+    
+}
+
+a {
+    color: #3c3b3b;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #354c89;
+  }
+  
+  a:active {
+    color: #4871d8;
+  }
+
 /* CSS for the navigation banner */
 .navbar-banner {
     display: flex;

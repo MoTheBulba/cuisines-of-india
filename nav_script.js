@@ -1,7 +1,8 @@
 // Define the navigation items
 const navItems = [
-    { text: 'Map of India', link: 'map_states_and_union_territories.html' },
+    { text: 'Map of India', link: 'index.html' },
     { text: 'About', link: 'about.html' },
+    { text: 'Browse', link: 'search_data.html' },
 ];
 
 // Function to generate the navigation banner

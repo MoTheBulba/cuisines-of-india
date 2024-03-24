@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="search_data.css">
+    <script src="search_data.js"></script>
+    <title>Browse Dishes</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div class="introduction">
+        <h1>Browse All The Dishes</h1>
+
+        <p>The table below lists all the dishes described on this website.
+            <br>
+            Use the drop down options to filter through the dishes.
+        </p>
+    </div>
+
+    <div class="outer-wrapper">
+        <div class="table-wrapper">
+            <!-- <table id="DishesData">
+                <thead>
+                    <th col-index="1">Dish Name</th>
+                    <th col-index="2">Region
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all"></option>
+                        </select>
+                    </th>
+
+                    <th col-index="3">Meal Type
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all"></option>
+                        </select>
+                    </th>
+                    <th col-index="4">Flavour 1
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all"></option>
+                        </select>
+                    </th>
+                    <th col-index="5">Flavour 2
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all"></option>
+                        </select>
+                    </th>
+                    <th col-index="6">Diet Type
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all"></option>
+                        </select>
+                    </th>
+                </thead> -->
+                <table id="DishesData">
+                    <thead>
+                        <th col-index="1">Dish Name</th>
+                        <th col-index="2">Region
+                            <select class="table-filter" onchange="filter_rows()">
+                                <option value="all"></option>
+                            </select>
+                        </th>
+    
+                        <th col-index="3">Meal Type
+                            <select class="table-filter" onchange="filter_rows()">
+                                <option value="all"></option>
+                            </select>
+                        </th>
+                        <th col-index="4">Flavour 1
+                            <select class="table-filter" onchange="filter_rows()">
+                                <option value="all"></option>
+                            </select>
+                        </th>
+                        <th col-index="5">Flavour 2
+                            <select class="table-filter" onchange="filter_rows()">
+                                <option value="all"></option>
+                            </select>
+                        </th>
+                        <th col-index="6">Diet Type
+                            <select class="table-filter" onchange="filter_rows()">
+                                <option value="all"></option>
+                            </select>
+                        </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Prawn Curry</td>
+                        <td>Andaman and Nicobar Islands</td>
+                        <td>Main</td>
+                        <td>Umami</td>
+                        <td>Aromatic</td>
+                        <td>Seafood</td>
+                      </tr>
+                      <tr>
+                        <td>Macher Jhol</td>
+                        <td>Andaman and Nicobar Islands</td>
+                        <td>Main</td>
+                        <td>Aromatic</td>
+                        <td>Spicy</td>
+                        <td>Seafood</td>
+                      </tr>
+                      <tr>
+                        <td>Mirchi Ka Salan</td>
+                        <td>Andhra Pradesh</td>
+                        <td>Side dish</td>
+                        <td>Spicy</td>
+                        <td>Nutty</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Pulusu Pindi/Uppindi/Puli Upma/Tamarind Upma</td>
+                        <td>Andhra Pradesh</td>
+                        <td>Main</td>
+                        <td>Tangy</td>
+                        <td>Mild</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Arunachali Steamed Fish</td>
+                        <td>Arunachal Pradesh</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                      </tr>
+                      <tr>
+                        <td>Lukter</td>
+                        <td>Arunachal Pradesh</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                      </tr>
+                      <tr>
+                        <td>Khorisa Maas</td>
+                        <td>Assam</td>
+                        <td>Main</td>
+                        <td>Tangy</td>
+                        <td>Savoury</td>
+                        <td>Seafood</td>
+                      </tr>
+                      <tr>
+                        <td>Aloo Pitika w/ Poitabhath</td>
+                        <td>Assam</td>
+                        <td>Main</td>
+                        <td>Mild</td>
+                        <td>Tangy</td>
+                        <td>Vegetarian</td>
+                      </tr>
+                      <tr>
+                        <td>Litti Chokha</td>
+                        <td>Bihar</td>
+                        <td>Main</td>
+                        <td>Rich</td>
+                        <td>Savoury</td>
+                        <td>Vegetarian</td>
+                      </tr>
+                      <tr>
+                        <td>Dal Pitha</td>
+                        <td>Bihar</td>
+                        <td>Snack</td>
+                        <td>Savoury</td>
+                        <td>Mild</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Fish Tikka</td>
+                        <td>Chandigarh</td>
+                        <td>Side dish</td>
+                        <td>Aromatic</td>
+                        <td>Spicy</td>
+                        <td>Seafood</td>
+                      </tr>
+                      <tr>
+                        <td>Chole</td>
+                        <td>Chandigarh</td>
+                        <td>Main</td>
+                        <td>Savoury</td>
+                        <td>Nutty</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Bafauri</td>
+                        <td>Chhattisgarh</td>
+                        <td>Snack</td>
+                        <td>Savoury</td>
+                        <td>Spicy</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Aamat</td>
+                        <td>Chhattisgarh</td>
+                        <td>Main</td>
+                        <td>Tangy</td>
+                        <td>Mild</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Patta Chicken</td>
+                        <td>Dadra and Nagar Haveli</td>
+                        <td>Main</td>
+                        <td>Herby</td>
+                        <td>Aromatic</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Ubadiyu</td>
+                        <td>Dadra and Nagar Haveli</td>
+                        <td>Main</td>
+                        <td>Herby</td>
+                        <td>Earthy</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Aloo Paratha</td>
+                        <td>Delhi</td>
+                        <td>Staple</td>
+                        <td>Savoury</td>
+                        <td>Spicy</td>
+                        <td>Vegetarian</td>
+                      </tr>
+                      <tr>
+                        <td>Seekh Kebab</td>
+                        <td>Delhi</td>
+                        <td>Main</td>
+                        <td>Savoury</td>
+                        <td>Aromatic</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Recheado Fish Fry</td>
+                        <td>Goa</td>
+                        <td>Main</td>
+                        <td>Spicy</td>
+                        <td>Tangy</td>
+                        <td>Seafood</td>
+                      </tr>
+                      <tr>
+                        <td>Sorpotel</td>
+                        <td>Goa</td>
+                        <td>Main</td>
+                        <td>Spicy</td>
+                        <td>Tangy</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Gujarati Dal</td>
+                        <td>Gujarat</td>
+                        <td>Main</td>
+                        <td>Tangy</td>
+                        <td>Sweet</td>
+                        <td>Vegetarian</td>
+                      </tr>
+                      <tr>
+                        <td>Khaman/Nylon Khaman/Dhokla </td>
+                        <td>Gujarat</td>
+                        <td>Snack</td>
+                        <td>Savoury</td>
+                        <td>Sweet</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Bajre Aloo Paratha</td>
+                        <td>Haryana</td>
+                        <td>Staple</td>
+                        <td>Aromatic</td>
+                        <td>Mild</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Kadhi Pakora</td>
+                        <td>Haryana</td>
+                        <td>Main</td>
+                        <td>Savoury</td>
+                        <td>Tangy</td>
+                        <td>Vegetarian</td>
+                      </tr>
+                      <tr>
+                        <td>Chana Madra</td>
+                        <td>Himachal Pradesh</td>
+                        <td>Side dish</td>
+                        <td>Tangy</td>
+                        <td>Earthy</td>
+                        <td>Vegetarian</td>
+                      </tr>
+                      <tr>
+                        <td>Siddu</td>
+                        <td>Himachal Pradesh</td>
+                        <td>Snack</td>
+                        <td>Rich</td>
+                        <td>Mild</td>
+                        <td>Vegetarian</td>
+                      </tr>
+                      <tr>
+                        <td>Khatta Meat</td>
+                        <td>Jammu and Kashmir</td>
+                        <td>Main</td>
+                        <td>Tangy</td>
+                        <td>Savoury</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Goshtaba </td>
+                        <td>Jammu and Kashmir</td>
+                        <td>Main</td>
+                        <td>Rich</td>
+                        <td>Mild</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Dhuska</td>
+                        <td>Jharkhand</td>
+                        <td>Staple</td>
+                        <td>Mild</td>
+                        <td>Nutty</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Mutton Atthey</td>
+                        <td>Jharkhand</td>
+                        <td>Main</td>
+                        <td>Rich</td>
+                        <td>Savoury</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Sagu</td>
+                        <td>Karnataka</td>
+                        <td>Main</td>
+                        <td>Creamy</td>
+                        <td>Nutty</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Kori Gassi</td>
+                        <td>Karnataka</td>
+                        <td>Main</td>
+                        <td>Spicy</td>
+                        <td>Nutty</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td><a target="_blank" href="Regions/Dishes/Kerala/pathiri.html">Pathiri</a></td>
+                        <td>Kerala</td>
+                        <td>Staple</td>
+                        <td>Plain</td>
+                        <td></td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Pidiyum</td>
+                        <td>Kerala</td>
+                        <td>Staple</td>
+                        <td>Plain</td>
+                        <td></td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Khambir</td>
+                        <td>Ladakh</td>
+                        <td>Staple</td>
+                        <td>Plain</td>
+                        <td>Tangy</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Skyu</td>
+                        <td>Ladakh</td>
+                        <td>Main</td>
+                        <td>Savoury</td>
+                        <td>Earthy</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Maas Podichath</td>
+                        <td>Lakshadweep</td>
+                        <td>Main</td>
+                        <td>Mild</td>
+                        <td>Savoury</td>
+                        <td>Seafood</td>
+                      </tr>
+                      <tr>
+                        <td>Farata</td>
+                        <td>Lakshadweep</td>
+                        <td>Staple</td>
+                        <td>Plain</td>
+                        <td></td>
+                        <td>Vegetarian</td>
+                      </tr>
+                      <tr>
+                        <td>Bhutte Ka Kees</td>
+                        <td>Madhya Pradesh</td>
+                        <td>Side dish</td>
+                        <td>Creamy</td>
+                        <td>Mild</td>
+                        <td>Vegetarian</td>
+                      </tr>
+                      <tr>
+                        <td>Dal Bafla</td>
+                        <td>Madhya Pradesh</td>
+                        <td>Main</td>
+                        <td>Rich</td>
+                        <td>Spicy</td>
+                        <td>Vegetarian</td>
+                      </tr>
+                      <tr>
+                        <td>Misal Pav</td>
+                        <td>Maharashtra</td>
+                        <td>Main</td>
+                        <td>Rich</td>
+                        <td>Savoury</td>
+                        <td>Vegetarian</td>
+                      </tr>
+                      <tr>
+                        <td>Thalipeeth </td>
+                        <td>Maharashtra</td>
+                        <td>Snack</td>
+                        <td>Aromatic</td>
+                        <td>Earthy</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Manipur Kangshoi</td>
+                        <td>Manipur</td>
+                        <td>Main</td>
+                        <td>Umami</td>
+                        <td>Mild</td>
+                        <td>Seafood</td>
+                      </tr>
+                      <tr>
+                        <td>Ooti Thongba</td>
+                        <td>Manipur</td>
+                        <td>Main</td>
+                        <td>Earthy</td>
+                        <td>Mild</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Do'o Kappa</td>
+                        <td>Meghalaya</td>
+                        <td>Main</td>
+                        <td>Savoury</td>
+                        <td>Spicy</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Dohneiiong</td>
+                        <td>Meghalaya</td>
+                        <td>Main</td>
+                        <td>Aromatic</td>
+                        <td>Nutty</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Sawhchiar</td>
+                        <td>Mizoram</td>
+                        <td>Main</td>
+                        <td>Savoury</td>
+                        <td>Creamy</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Bai</td>
+                        <td>Mizoram</td>
+                        <td>Main</td>
+                        <td>Herby</td>
+                        <td>Aromatic</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Pork Pickle</td>
+                        <td>Nagaland</td>
+                        <td>Side dish</td>
+                        <td>Spicy</td>
+                        <td>Aromatic</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Amrusu</td>
+                        <td>Nagaland</td>
+                        <td>Main</td>
+                        <td>Spicy</td>
+                        <td>Savoury</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Dalma</td>
+                        <td>Odisha</td>
+                        <td>Main</td>
+                        <td>Tangy</td>
+                        <td>Sweet</td>
+                        <td>Vegetarian</td>
+                      </tr>
+                      <tr>
+                        <td>Amba Khatta</td>
+                        <td>Odisha</td>
+                        <td>Side dish</td>
+                        <td>Sweet</td>
+                        <td>Tangy</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Mushroom Bonda</td>
+                        <td>Puducherry</td>
+                        <td>Snack</td>
+                        <td>Savoury</td>
+                        <td>Earthy</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Pondicherry Fish Assad Curry</td>
+                        <td>Puducherry</td>
+                        <td>Main</td>
+                        <td>Rich</td>
+                        <td>Nutty</td>
+                        <td>Seafood</td>
+                      </tr>
+                      <tr>
+                        <td>Rajma</td>
+                        <td>Punjab</td>
+                        <td>Main</td>
+                        <td>Rich</td>
+                        <td>Spicy</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Amritsari Fish</td>
+                        <td>Punjab</td>
+                        <td>Snack</td>
+                        <td>Spicy</td>
+                        <td>Aromatic</td>
+                        <td>Seafood</td>
+                      </tr>
+                      <tr>
+                        <td>Mirchi Vada</td>
+                        <td>Rajasthan</td>
+                        <td>Snack</td>
+                        <td>Earthy</td>
+                        <td>Salty</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Gatte Ki Sabzi</td>
+                        <td>Rajasthan</td>
+                        <td>Main</td>
+                        <td>Rich</td>
+                        <td>Creamy</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Phagshapa</td>
+                        <td>Sikkim</td>
+                        <td>Main</td>
+                        <td>Spicy</td>
+                        <td>Aromatic</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Phingsha</td>
+                        <td>Sikkim</td>
+                        <td>Main</td>
+                        <td>Spicy</td>
+                        <td>Savoury</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Vada Curry</td>
+                        <td>Tamil Nadu</td>
+                        <td>Main</td>
+                        <td>Tangy</td>
+                        <td>Spicy</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Chicken Chettinad</td>
+                        <td>Tamil Nadu</td>
+                        <td>Main</td>
+                        <td>Rich</td>
+                        <td>Savoury</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Hyderabadi Biryani</td>
+                        <td>Telangana</td>
+                        <td>Main</td>
+                        <td>Aromatic</td>
+                        <td>Savoury</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Hyderabadi Haleem</td>
+                        <td>Telangana</td>
+                        <td>Main</td>
+                        <td>Rich</td>
+                        <td>Savoury</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Awan Bangwi</td>
+                        <td>Tripura</td>
+                        <td>Staple</td>
+                        <td>Mild</td>
+                        <td>Aromatic</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Wahan Mosdeng </td>
+                        <td>Tripura</td>
+                        <td>Main</td>
+                        <td>Aromatic</td>
+                        <td>Herby</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>Matar ka Nimona</td>
+                        <td>Uttar Pradesh</td>
+                        <td>Main</td>
+                        <td>Earthy</td>
+                        <td>Herby</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Bedmi Poori</td>
+                        <td>Uttar Pradesh</td>
+                        <td>Staple</td>
+                        <td>Savoury</td>
+                        <td>Aromatic</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Bhatt Ki Dal</td>
+                        <td>Uttarakhand</td>
+                        <td>Main</td>
+                        <td>Creamy</td>
+                        <td>Spicy</td>
+                        <td>Vegan</td>
+                      </tr>
+                      <tr>
+                        <td>Kumaoni Raita</td>
+                        <td>Uttarakhand</td>
+                        <td>Side dish</td>
+                        <td>Fresh</td>
+                        <td>Earthy</td>
+                        <td>Vegetarian</td>
+                      </tr>
+                      <tr>
+                        <td>Chingri Posto</td>
+                        <td>West Bengal</td>
+                        <td>Main</td>
+                        <td>Umami</td>
+                        <td>Nutty</td>
+                        <td>Seafood</td>
+                      </tr>
+                      <tr>
+                        <td>Daler Bora</td>
+                        <td>West Bengal</td>
+                        <td>Snack</td>
+                        <td>Spicy</td>
+                        <td>Nutty</td>
+                        <td>Vegan</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+      
+  <script>
+    window.onload = () => {
+        console.log(document.querySelector("#DishesData > tbody > tr:nth-child(1) > td:nth-child(2) ").innerHTML);
+    };
+    getUniqueValuesFromColumn();
+</script>
+</div>
+</div>
+
+<script src="nav_script.js"></script>
+<script>generateNavbar();</script>
+</body>
+
+</html>
+
+<!-- Code taken from https://github.com/zangetsu-isshin/dropdown-filter/tree/main -->
+<!-- Thank you, zangetsu-isshin -->

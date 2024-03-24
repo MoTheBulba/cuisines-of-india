@@ -30,6 +30,19 @@ p {
     line-height: 1.6;
 }
 
+a {
+    color: #522c2c;
+  }
+  
+  a:hover {
+    color: #a90606;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: #f08914;
+  }
+
 /* CSS for the FAQ */
 .faq {
     text-align: justify;

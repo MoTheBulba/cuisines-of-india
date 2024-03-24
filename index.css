@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    min-height: 100vh;
+}
+
+/* CSS for the navigation banner */
+.navbar-banner {
+    display: flex;
+    background-color: #181818;
+    padding: 10px 20px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 9999; 
+}
+
+.navbar-banner a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-banner a:hover {
+    color: #2cb200;
+}
+
+/*
+.search-bar {
+    margin-left: auto;
+    margin-right: 50px;
+}
+*/
+
+.outer-wrapper {
+    display: flex;
+    justify-content: space-between; /* Align items to the start and end of the container */
+    align-items: flex-start; /* Align items at the top of the container */
+}
+
+/* CSS for the intro */
+.introduction {
+    width: 500px; 
+    text-align: justify;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.introduction p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* CSS for the image */
+#container {
+    width: 50%; /* Adjust the width as needed */
+    margin-right: 10%; /* Align the container to the right */
+}
+
+#image_container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+    margin-top: 50px; 
+    float: left; 
+    clear: both; 
+    width: 100%; 
+}
+
+img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}

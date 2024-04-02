@@ -35,6 +35,13 @@ p {
     line-height: 1.6;
 }
 
+ol {
+    font-family: Arial, sans-serif;
+    color: #3c3b3b;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
 /* CSS for the "Go Back" link */
 .go_back {
     text-align: center;

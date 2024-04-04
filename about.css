@@ -43,6 +43,16 @@ a {
     color: #f08914;
   }
 
+.thamaasha p{
+    font-size: 10px;
+    padding: 10px;
+}
+
+.thamaasha a{
+    color: #64501b;
+    text-decoration: none;
+}
+
 /* CSS for the FAQ */
 .faq {
     text-align: justify;
